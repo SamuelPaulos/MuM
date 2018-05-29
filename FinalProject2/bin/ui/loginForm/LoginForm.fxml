@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="274.0" prefWidth="475.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.loginForm.UserLoginController">
+   <children>
+      <Pane layoutX="-139.0" layoutY="-186.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="btnLogin" layoutX="340.0" layoutY="383.0" mnemonicParsing="false" onAction="#btnLoginActionListener" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #6495ED;" text="Login" textFill="WHITE" />
+            <Button fx:id="btnCancel" layoutX="424.0" layoutY="383.0" mnemonicParsing="false" onAction="#btnCancelActionListener" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #6495ED;" text="Cancel" textFill="WHITE" />
+            <Label layoutX="221.0" layoutY="341.0" text="Password:" textFill="#1b4cd3">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="221.0" layoutY="301.0" text="User Name:" textFill="#1b4cd3">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtUserName" layoutX="340.0" layoutY="301.0" promptText="username" />
+            <PasswordField fx:id="txtPassword" layoutX="340.0" layoutY="343.0" promptText="password" />
+            <RadioButton fx:id="rdCredit" layoutX="366.0" layoutY="263.0" mnemonicParsing="false" onAction="#rdCreditSelected" text="Credit">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="group" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rdBank" layoutX="282.0" layoutY="263.0" mnemonicParsing="false" onAction="#rdBankSelected" selected="true" text="Bank" toggleGroup="$group">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </RadioButton>
+            <Button fx:id="btnSignUp1" layoutX="521.0" layoutY="383.0" mnemonicParsing="false" onAction="#btnRegisterStaffActionListener" style="-fx-background-color: #6495ED;" text="SignUp" textFill="WHITE" />
+            <Label fx:id="lblBankCreditSelectionResult" layoutX="288.0" layoutY="220.0" prefHeight="27.0" prefWidth="157.0" text="Bank Login Form" textFill="#486ce1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
